@@ -1,0 +1,39 @@
+﻿@using KisiselWebSitesi.Models.Siniflar
+@model List<AnaSayfa>
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kişisel Web Sitesi</title>
+    <link rel="stylesheet" href="~/Web-KisiselWebSitesi/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
+</head>
+
+<body>
+    <div class="center">
+        <div class="avatar">
+            @foreach (var item in Model)
+            {
+                <img src="@item.profil">
+            }
+        </div>
+        <div class="content">
+            @foreach (var item in Model)
+            {
+                <h1>@item.isim</h1>
+                <h2>@item.unvan</h2>
+                <p>@item.aciklama</p>
+                <h3>@item.iletisim</h3>
+            }
+        </div>
+        @Html.Action("ikonlar", "AnaSayfa")
+    </div>
+</body>
+</html>

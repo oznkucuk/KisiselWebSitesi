@@ -1,0 +1,27 @@
+﻿@model KisiselWebSitesi.Models.Siniflar.ikonlar
+@{
+    ViewBag.Title = "ikonGetir";
+    Layout = "~/Views/Shared/_AdminLayout.cshtml";
+}
+
+<h2>Ikon Güncelle</h2>
+<br />
+
+@using (Html.BeginForm("ikonGüncelle", "Admin", FormMethod.Post))
+{
+    @Html.LabelFor(x => x.id)
+    @Html.TextBoxFor(x => x.id, new { @class = "form-control", @readonly = "readonly" })
+    <br />
+    @Html.LabelFor(x => x.ikon)
+    @Html.TextBoxFor(x => x.ikon, new { @class = "form-control" })
+    <br />
+    @Html.LabelFor(x => x.link)
+    @Html.TextBoxFor(x => x.link, new { @class = "form-control" })
+    <br />
+    @*<button class="btn btn-success">İkon Güncelle</button>*@
+    <a href="/Admin/ikonListesi" class="btn btn-success">İkon Güncelle</a>
+}
+
+
+
+
