@@ -11,5 +11,5 @@ Proje boyunca;
 
 
 ![Anasayfa](https://github.com/oznkucuk/KisiselWebSitesi/blob/main/KisiselWebSitesi/img/kisisel-anasayfa.png)
-![Anasayfa](https://github.com/oznkucuk/KisiselWebSitesi/blob/main/KisiselWebSitesi/img/kisisel-login.png)
+![Admin Şifre Ekranı](https://github.com/oznkucuk/KisiselWebSitesi/blob/main/KisiselWebSitesi/img/kisisel-login.png)
 ![Admin paneli](https://github.com/oznkucuk/KisiselWebSitesi/blob/main/KisiselWebSitesi/img/kisisel-admin.png)
